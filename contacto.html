@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos - Barbería Alura</title>
+        <link rel="shortcut icon" href="assets/images/logos/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/reset.css"><!--Esta hoja de estilos anula los estilos que el navegador genera automaticamente-->
+        <link rel="stylesheet" href="assets/css/style-contacto.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="assets/images/logos/logo.png"" alt="Logo de la barberia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombre-apellido">Nombre y apellido</label><!--Al asignar la etiqueta al elemento al clickear en ella se coloca el focus a dicho elemento-->
+                <input type="text" id="nombre-apellido" class="imput-padron" required>
+                <!--Los elementos de un formulario tienen la propiedad "display:inline" por lo que ocupan el espacio de su contenido unicamente-->
+                <label for="email-address">Correo Electronico</label>
+                <input type="email" id="email-address" class="imput-padron" required placeholder="user@domain.com">
+                <!-- la palabra reservada "required" impide el envio del formlario si el campo al que se le asignó no ha sido llenado -->
+                <label for="phone-number">Número de teléfono</label>
+                <input type="tel" id="phone-number" class="imput-padron" required placeholder="(XXX)XXXX-XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10" class="imput-padron" required></textarea>
+                
+                <fieldset>
+                    <legend>¿Como le gustaria que lo contactemos?</legend><!-- Usamos "legend" para un título de un grupo de campos en cualquier formulario. -->
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    <!-- La propiedad name solo se puede “completar” una vez, es por eso que, cuando seleccionamos uno de los ítems, se anula el otro, manteniendo solamente uno seleccionado. -->
+    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="email" id="radio-telefono">Teléfono</label>
+                    
+    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="email" id="radio-whatsapp" checked>Whatsapp</label>
+                    <!-- La palabra reservada "checked" indica que el elemento esta marcado por defecto -->
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>¿En que horario prefiere ser atendido?</legend>
+                    <select name="" id=""><!-- Esta etiqueta crea una lista desplegable -->
+                        <option value="">Mañama</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>
+                    
+                    <label class="checkbox"><input type="checkbox" name="" checked>¿Le gustaría recibir novedades de la barbería alura?</label>
+    
+                    <input type="submit" value="Enviar formulario" class="enviar">
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <img src="assets/images/logos/logo-blanco.png" alt="Logo de la barberia Alura">
+            <p class="copyright">&copy Copyright Barbería Alura </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #0174a2;
+    padding: 20px 0;
+}
+
+.caja{
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto    ;/*El margen automatico nos permite centrar el elemento sin importar el ancho de la pagina*/
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    position: absolute;
+    top: 115px;
+    right:20%;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px ;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{/*asigna este estilo cuando el cursor pasa sobre el elemento*/
+    color: #E3E4E5;
+    text-decoration: underline;
+}
+
+
+form{
+margin: 40px;
+}
+
+form label, form legend{/* cuando halla que dar el mismo estilo a varios elementos es una buena estrategia usar clases o selectores separados por "," */
+    font-size: 20px;
+    display: block;/* El elemento genera un cuadro de elemento de bloque. */
+    margin: 0 0 10px;
+}
+.imput-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+nav a:hover{/*asigna este estilo cuando el cursor pasa sobre el elemento*/
+    color: #E3E4E5;
+    text-decoration: underline;
+}
+main{
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto    ;/*El margen automatico nos permite centrar el elemento sin importar el ancho de la pagina*/
+}
+
+footer{
+    text-align: center;
+    background:url(/assets/images/bg.jpg);
+    padding: 40px;
+}
+.copyright{
+    color:#CCCCCC;
+    font-size: 13px;
+}
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.05);/* si se quieren ejecutar mas efectos se deben poner en una sola propiedad transform */
+}
+@media screen and (max-width:720px) {
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .caja{
+        flex-flow: column;
+    }
+    form label, form legend {
+        font-size: 14px;
+    }
+
+    .imput-padron{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:570px) {
+    .enviar{
+        width: 190px;
+    }
+}

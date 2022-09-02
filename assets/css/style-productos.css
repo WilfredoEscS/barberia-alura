@@ -1,0 +1,124 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #0174a2;
+    padding: 20px 0;
+}
+
+.caja{
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto    ;/*El margen automatico nos permite centrar el elemento sin importar el ancho de la pagina*/
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    position: absolute;
+    top: 115px;
+    right:20%;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px ;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{/*asigna este estilo cuando el cursor pasa sobre el elemento*/
+    color: #E3E4E5;
+    text-decoration: underline;
+}
+
+
+
+.productos{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    vertical-align: top;
+    margin: 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 10px ;
+    border:2px solid #000000/*Esto es igual que hacerlo por separado*/
+/*     border-color: black;
+    border-width: 2px;
+    border-style: solid; */
+}
+
+.productos li:hover{
+    border-color: #85cbef;
+}
+
+.productos li:active{/*El estilo se aplica cuando el elemento "li" de la clase "productos" es activado*/
+    border-color: #274684 ;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*"hover" indica que el estilo se aplicara cuando el puntero pase por el elemento "li" de la clase "productos" y 
+el el "h2" es el elemento al que se le aplica el estilo */
+.productos li:hover h2{ 
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background:url(/assets/images/bg.jpg);
+    padding: 40px;
+}
+.copyright{
+    color:#CCCCCC;
+    font-size: 13px;
+}
+
+/* responsive */
+
+@media screen and (max-width:720px) {
+    
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+        margin:10px
+    }
+    
+    .caja{
+        flex-flow: column;
+    }
+
+}
