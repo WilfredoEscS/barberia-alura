@@ -131,7 +131,7 @@ nav a:hover{/*asigna este estilo cuando el cursor pasa sobre el elemento*/
 .footer{
     text-align: center;
     padding: 40px;
-    background: url(/assets/images/bg.jpg);
+    background: url(../../assets/images/bg.jpg);
 }
 
 /* Ajustes de diseño responsive */

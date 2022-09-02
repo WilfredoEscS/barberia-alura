@@ -95,7 +95,7 @@ el el "h2" es el elemento al que se le aplica el estilo */
 
 footer{
     text-align: center;
-    background:url(/assets/images/bg.jpg);
+    background:url(../../assets/images/bg.jpg);
     padding: 40px;
 }
 .copyright{
